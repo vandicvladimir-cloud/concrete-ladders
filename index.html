@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изготовление бетонных лестниц и крылец | Беларусь</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+                        url('images/your-header-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 70px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #e67e22;
+            display: block;
+            margin: 15px auto 0;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .advantages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            text-align: center;
+        }
+
+        .adv-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .step {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+            background: #e67e22;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin: 0 auto 15px;
+            font-size: 18px;
+        }
+
+        .contact {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .contact a.btn {
+            background: #e67e22;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Изготовление бетонных лестниц и крылец</h1>
+    <p>Монолитные лестницы любой сложности по всей Беларуси</p>
+    <a href="#contact" class="btn">Получить консультацию</a>
+</header>
+
+<section>
+    <h2>О компании</h2>
+    <div class="about">
+        <p>
+            Мы профессионально занимаемся изготовлением бетонных лестниц и крылец
+            для частных домов, коттеджей и коммерческих объектов.
+            Работаем по всей территории Беларуси.
+            Выполняем проекты любой сложности с соблюдением строительных норм.
+        </p>
+        <br>
+        <p>
+            Предоставляем полный цикл работ: замер, проектирование,
+            изготовление опалубки, армирование и заливка бетона.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Виды работ</h2>
+    <div class="services">
+
+        <div class="card">
+            <img src="images/photo1.jpg" alt="Прямые лестницы">
+            <div class="card-content">
+                <h3>Прямые лестницы</h3>
+                <p>Классические монолитные конструкции для частных домов.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/photo2.jpg" alt="П-образные лестницы">
+            <div class="card-content">
+                <h3>Винтовые лестницы</h3>
+                <p>Это компактное и стильное решение для доступа на верхние этажи, идеально подходит для помещений с ограниченой площадью.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/photo3.jpg" alt="Крыльцо из бетона">
+            <div class="card-content">
+                <h3>Крыльцо из бетона</h3>
+                <p>Прочные входные группы любой формы и размера.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Почему выбирают нас</h2>
+    <div class="advantages">
+        <div class="adv-box">
+            <h3>Опыт работы</h3>
+            <p>Многолетний опыт в строительстве монолитных конструкций.</p>
+        </div>
+        <div class="adv-box">
+            <h3>Качество материалов</h3>
+            <p>Используем проверенные бетонные смеси и арматуру.</p>
+        </div>
+        <div class="adv-box">
+            <h3>Работа по всей Беларуси</h3>
+            <p>Выезжаем на объекты в любой регион страны.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Как мы работаем</h2>
+    <div class="steps">
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Звонок или заявка</h3>
+            <p>Вы связываетесь с нами по телефону или оставляете заявку.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Расчет стоимости и материалов</h3>
+            <p>Производим расчет объема работ, количество материалов и согласуем стоимость.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Изготовление каркаса</h3>
+            <p>Устанавливаем опалубку и армирование конструкции.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Заливка бетона</h3>
+            <p>Профессиональная заливка бетона с соблюдением технологии.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <h3>Оплата и сдача объекта</h3>
+            <p>После завершения работ объект принимается и производится оплата.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +375 (33) 6069053</p>
+    <p>Email: info@example.by</p>
+    <a href="tel:+375336069053" class="btn">Позвонить</a>
+</section>
+
+<footer>
+    © 2026 Изготовление бетонных лестниц и крылец | Беларусь
+</footer>
+
+</body>
+</html>
